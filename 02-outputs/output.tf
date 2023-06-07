@@ -4,7 +4,7 @@ output "sample" {
 }
 
 
-output "sample 1" {
+output "sample1" {
  value = 1000
 
 }

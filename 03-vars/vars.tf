@@ -30,7 +30,7 @@ variable "courses" {
   default = [
    "DevOps",
    "AWS",
-   "Python",
+   "Python"
   ]
 
   }
@@ -43,14 +43,15 @@ variable "course_details" {
     name = "DevOps"
     timing = "10am"
     duration = 90
-   }
+    }
 
    AWS = {
     name = "AWS"
     timimg = "11am"
     duration = 30
    }
-
+  }
+}
    output "course" {
      value = var.course
    }

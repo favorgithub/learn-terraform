@@ -1,4 +1,4 @@
 output "sample 1" {
-value = 1000
+ value = 1000
 
 }

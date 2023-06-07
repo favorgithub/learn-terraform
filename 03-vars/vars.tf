@@ -27,7 +27,7 @@ variable "course" {
 
 ## List Variable
 variable "courses" {
-  default [
+  default = [
    "DevOps",
    "AWS",
    "Python",

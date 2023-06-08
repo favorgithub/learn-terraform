@@ -69,7 +69,7 @@ variable "course_details" {
    variable "env" {}
 
    output "env" {
-    value = var.env
+     value = var.env
    }
 
 

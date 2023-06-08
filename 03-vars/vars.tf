@@ -74,7 +74,7 @@ variable "course_details" {
   variable "url" {}
 
   output "url" {
-  value = var.url
+    value = var.url
 
   }
 

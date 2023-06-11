@@ -44,5 +44,10 @@ data "aws_ami" "example" {
 
  variable "name" {}
 
+ output "public_ip" {
+   value = aws_instance.web.public_ip
+
+ }
+
 
  ##child directory

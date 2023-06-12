@@ -38,7 +38,7 @@ module "rabbitmq" {
   name = "rabbitmq"
 }
 
-module "payment {
+module "payment" {
   source = "./ec2"
   name = "payment"
 }

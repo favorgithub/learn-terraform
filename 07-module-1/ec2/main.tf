@@ -21,9 +21,8 @@ data "aws_ami" "example" {
 
 
    ingress {
-     description      = "SSH"
-     from_port        = 22
-     to_port          = 22
+     from_port        = 0
+     to_port          = 0
      protocol         = "tcp"
      cidr_blocks      = ["0.0.0.0/0"]
 
@@ -34,7 +33,6 @@ data "aws_ami" "example" {
      to_port          = 0
      protocol         = "-1"
      cidr_blocks      = ["0.0.0.0/0"]
-     ipv6_cidr_blocks = ["::/0"]
    }
 
    tags = {
@@ -43,11 +41,6 @@ data "aws_ami" "example" {
  }
 
  variable "name" {}
-
- output "public_ip" {
-   value = aws_instance.web.public_ip
-
- }
 
 
  ##child directory

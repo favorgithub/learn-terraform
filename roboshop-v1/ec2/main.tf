@@ -7,6 +7,8 @@ resource "aws_instance" "web" {
     Name = var.name
   }
 
+  provisioner "remote-exec" {
+
   connection {
         type     = "ssh"
         user     = "centos"
@@ -14,7 +16,6 @@ resource "aws_instance" "web" {
         host     = self.public_ip
       }
 
-    provisioner "remote-exec" {
         inline = [
           "sudo labauto ansible",
           "ansible-pull -i localhost, -U https://github.com/favorgithub/roboshop-ansible main.yml -e env=dev -e role_name=${var.name}"

@@ -3,6 +3,10 @@
 ## In the ami we are calling the data source block i.e. data.aws_ami.example.id = resource type.resource name.id
 ## Here also we want to print the public ip addresses, then we use the output command
 ## syntax is resource type.resource name.public id
+## the output was not printing ....
+## Everything in terraform is a module, where ever you are starting you code that is where
+## you have your resource configuration file is reffered to as the root module
+## From there you can call other module like the child module
 
 
 resource "aws_instance" "web" {

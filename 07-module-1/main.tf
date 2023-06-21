@@ -1,3 +1,9 @@
+## In the output block we are calling the module as value module below
+## module.sample1.public_ip = resource type.resource name.public ip
+
+
+
+
 module "sample1" {
   source = "./ec2"
   name = "sample1"

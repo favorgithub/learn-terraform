@@ -1,3 +1,8 @@
+## We declared a variable as sample
+## anywhere we had sample , we replaced by var.name
+## In the ami we are calling the data source block i.e. data.aws_ami.example.id = resource type.resource name.id
+
+
 resource "aws_instance" "web" {
   ami           = data.aws_ami.example.id
   instance_type = "t3.micro"

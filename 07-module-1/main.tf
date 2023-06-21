@@ -14,7 +14,7 @@ output "public_ip_sample1" {
 }
 
 
-output "public_ip_sample1" {
+output "public_ip_sample2" {
   value = module.sample2.public.ip
 }
 

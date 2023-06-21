@@ -1,6 +1,8 @@
 ## We declared a variable as sample
 ## anywhere we had sample , we replaced by var.name
 ## In the ami we are calling the data source block i.e. data.aws_ami.example.id = resource type.resource name.id
+## Here also we want to print the public ip addresses, then we use the output command
+## syntax is resource type.resource name.public id
 
 
 resource "aws_instance" "web" {
@@ -49,3 +51,8 @@ data "aws_ami" "example" {
 
 
  ##child directory
+
+ output "public_ip" {
+   value = aws_instance.web.public_ip
+
+ }

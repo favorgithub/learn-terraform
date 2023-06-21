@@ -10,10 +10,10 @@ module "sample2" {
 }
 
 output "public_ip_sample1"
- value = module.sample1.public.ip
+  value = module.sample1.public.ip
 
 output "public_ip_sample1"
- value = module.sample2.public.ip
+  value = module.sample2.public.ip
 
 ## Here instead of writing the config for creating the for example dev aws instance from scratch or copy and past code
 #we can use a module block to use the code which is already inside  the AWS instance directory

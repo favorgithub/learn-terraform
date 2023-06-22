@@ -1,14 +1,3 @@
-## We declared a variable as sample
-## anywhere we had sample , we replaced by var.name
-## In the ami we are calling the data source block i.e. data.aws_ami.example.id = resource type.resource name.id
-## Here also we want to print the public ip addresses, then we use the output command
-## syntax is resource type.resource name.public id
-## the output was not printing ....
-## Everything in terraform is a module, where ever you are starting you code that is where
-## you have your resource configuration file is reffered to as the root module
-## From there you can call other module like the child module
-
-
 resource "aws_instance" "web" {
   ami           = data.aws_ami.example.id
   instance_type = "t3.micro"
@@ -60,3 +49,20 @@ data "aws_ami" "example" {
    value = aws_instance.web.public_ip
 
  }
+
+
+ ## Here in our main.tf config file, we are creating an EC2 instance resource  and a security group to attach to the ec2
+ #instance
+ ## In the ami we are calling the data source block i.e. data.aws_ami.example.id = resource type.resource name.id
+ ## Data sources allow data to be fetched or computed for use elsewhere in the Terraform configuration.
+ ## Data sources allow terraform to read attributes from resources which are provisioned outside its control.
+ ## Here also we want to print the public ip addresses, then we use the output command
+ ## syntax is resource type.resource name.public id
+ ## the output was not printing ....
+ ## Everything in terraform is a module, where ever you are starting you code that is where
+ ## you have your resource configuration file is reffered to as the root module
+ ## From there you can call other module like the child module
+ ## We declared a variable as sample
+ ## anywhere we had sample , we replaced by var.name
+ ##Child Module
+ ##Data Source: aws_ami  (Use this data source to get the ID of a registered AMI for use in other resources.)

@@ -1,4 +1,3 @@
-
 module "sample1" {
   source = "./ec2"
   name = "sample1"
@@ -18,7 +17,7 @@ output "public_ip_sample2" {
   value = module.sample2.public_ip
 }
 
-
+##Root Module##
 ## Here instead of writing the config for creating the for example dev aws instance from scratch or copy and past code
 #we can use a module block to use the code which is already inside  the AWS instance directory
 
@@ -30,4 +29,6 @@ output "public_ip_sample2" {
 
 ##For module syntax -  we used the module keyword followed by the logical name of the module sample 1 and 2
 #Inside the module block we have the required argument which is the source, this is the part where the source module is stored
+
+##For output, we had to declare the variable in the child module and then called the output block as a module
 

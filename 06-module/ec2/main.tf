@@ -1,16 +1,3 @@
-##Module is nothing but a group of resources
-## Here we created a directory
-## Here we created an ec2 local directory
-## Here we have our resource block configuration file for security group and and an ec2 instance
-## security group ec2 terraform
-## We have to provide the security group ids in the ec2 resource block - check documentation -vpc_security group
-## vpc_security_group_ids = resource type.resource name.id i.e aws_security_group.sg.id in square cos its a list
-## name is sg means security group
-## cidr_blocks - to whom you want to allow the port - 0.0.0.0/0 means to the outside world
-## This configuration file will launch 1 instance and 1 security group
-
-## Later we will try to create 2 sets of instances e.g. sample1 and sample2
-
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.example.id
@@ -55,3 +42,17 @@ data "aws_ami" "example" {
      Name = "sample"
    }
  }
+
+
+ ##Module is nothing but a group of resources
+ ## Here we created a directory
+ ## Here we created an ec2 local directory
+ ## Here we have our resource block configuration file for security group and and an ec2 instance
+ ## security group ec2 terraform
+ ## We have to provide the security group ids in the ec2 resource block - check documentation -vpc_security group
+ ## vpc_security_group_ids = resource type.resource name.id i.e aws_security_group.sg.id in square cos its a list
+ ## name is sg means security group
+ ## cidr_blocks - to whom you want to allow the port - 0.0.0.0/0 means to the outside world
+ ## This configuration file will launch 1 instance and 1 security group
+
+ ## Later we will try to create 2 sets of instances e.g. sample1 and sample2

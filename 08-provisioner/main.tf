@@ -57,5 +57,5 @@ data "aws_ami" "example" {
 #The remote-exec provisioner requires a connection and supports both ssh and winrm. we added an ssh connection block
 
 
-## We lauched an instance and also run other commands in that instance using provisioner block
+## We launched an instance, connect to the instance and also run other commands in that instance using provisioner block
 

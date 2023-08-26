@@ -44,3 +44,8 @@ variable "fruits" {
     value = var.fruits[0]
 
  }
+
+ output "fruit_0" {
+     value = element(var.fruits, 4)
+
+ }

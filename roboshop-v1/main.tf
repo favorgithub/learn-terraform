@@ -47,3 +47,6 @@ module "mongodb" {
   source = "./ec2"
   name = "mongodb"
 }
+
+
+## Root Directory calling the child director ec2

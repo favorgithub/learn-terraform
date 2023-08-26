@@ -8,8 +8,9 @@ output "class" {
   value = upper(var.class)
 }
 
-variable "fruits"
-  default = ["apples", "mango", "oranges"]
+variable "fruits" {
+   default = ["apples", "mango", "oranges"]
+}
 
   output "fruit_count" {
      value = length(var.fruits)

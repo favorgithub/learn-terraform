@@ -36,4 +36,7 @@ variable "fruits" {
     value = var.classes["devops"]["topics"]
   }
 
+ output "aws_topics" {
+    value = var.classes["aws"]["topics"]
+  }
 

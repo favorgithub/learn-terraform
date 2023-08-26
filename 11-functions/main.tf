@@ -39,3 +39,8 @@ variable "fruits" {
  output "aws_topics" {
     value = lookup(lookup(var.classes, "aws", null), "topics", "No Topics So far")
   }
+
+ outputs "fruit_0" {
+    value = var.fruits[0]
+
+ }

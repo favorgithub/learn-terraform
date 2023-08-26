@@ -9,7 +9,8 @@ output "class" {
 }
 
 variables "fruits"
-  default "apples. mango, oranges"
+  default = ["apples", "mango", "oranges"]
 
-  output "fruit_count"
-    value = length(var.fruits)
+  output "fruit_count" {
+     value = length(var.fruits)
+  }

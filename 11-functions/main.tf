@@ -33,7 +33,7 @@ variable "fruits" {
   }
 
   output "devops_topics" {
-    value var.classes["devops"] ["topics"]
+    value = var.classes["devops"]["topics"]
   }
 
 

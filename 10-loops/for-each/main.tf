@@ -24,7 +24,7 @@ data "aws_ami" "example" {
 }
        catalogue = {
           name = "catalogue"
-          instance_type = +t3.nano"
+          instance_type = "t3.nano"
   }
        Cart = {
          name = "catalogue"

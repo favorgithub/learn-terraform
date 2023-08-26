@@ -40,3 +40,4 @@ variable "fruits" {
     value = lookup(lookup(var.classes, "aws", null), "topics", "topics", "No Topics So far")
   }
 
+}

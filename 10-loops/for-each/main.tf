@@ -35,9 +35,7 @@ data "aws_ami" "example" {
          name = "catalogue"
          instance_type = "t3.nano"
 
-       }
-       }
-       }
-
-   }
  }
+ }
+ }
+

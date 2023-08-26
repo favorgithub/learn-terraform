@@ -45,7 +45,7 @@ variable "fruits" {
 
  }
 
- output "fruit_0" {
+ output "fruit_4" {
      value = element(var.fruits, 4)
 
  }
